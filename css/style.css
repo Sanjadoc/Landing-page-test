@@ -4,63 +4,89 @@
     Date: February 2016
     Version: 1.0
 */
-/* line 1, ../scss/_reset.scss */
-html, body, div, span, object, applet, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, embed, figure {
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400italic);
+/* line 6, ../scss/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
+  font: inherit;
   vertical-align: baseline;
 }
 
-/* line 9, ../scss/_reset.scss */
+/* HTML5 display-role reset for older browsers */
+/* line 27, ../scss/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../scss/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../scss/_reset.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 14, ../scss/_reset.scss */
+/* line 37, ../scss/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, ../scss/_reset.scss */
+blockquote:before, blockquote:after,
 q:before, q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
-/* line 20, ../scss/_reset.scss */
-a {
-  text-decoration: none;
-}
-
-/* line 24, ../scss/_reset.scss */
+/* line 45, ../scss/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
 /* General */
-/* line 5, ../scss/style.scss */
+/* line 8, ../scss/style.scss */
 html {
   height: 100%;
-  min-width: 640px;
+  min-width: 480px;
   max-width: 1680px;
   overflow: visible;
 }
 
-/* line 12, ../scss/style.scss */
+/* line 15, ../scss/style.scss */
 body {
   font: 12px/1.2 Arial, Helvetica, sans-serif;
   position: relative;
   height: 100%;
-  color: #000;
-  background-color: #fffff;
+  background-color: #FFFFFF;
   margin: 0 auto;
 }
 
-/* line 21, ../scss/style.scss */
+/* line 23, ../scss/style.scss */
 a * {
   cursor: pointer;
 }
 
 /* Animaniton */
-/* line 27, ../scss/style.scss */
+/* line 29, ../scss/style.scss */
 * {
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
@@ -68,14 +94,14 @@ a * {
   transition: all .3s;
 }
 
-/* line 34, ../scss/style.scss */
+/* line 36, ../scss/style.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 40, ../scss/style.scss */
+/* line 42, ../scss/style.scss */
 *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -114,7 +140,7 @@ a * {
     opacity: 1;
   }
 }
-/* line 86, ../scss/style.scss */
+/* line 88, ../scss/style.scss */
 .fadeIn {
   -webkit-animation-name: fadeIn;
   -moz-animation-name: fadeIn;
@@ -122,7 +148,7 @@ a * {
   animation-name: fadeIn;
 }
 
-/* line 93, ../scss/style.scss */
+/* line 95, ../scss/style.scss */
 .animated {
   -webkit-animation-duration: .3s;
   -moz-animation-duration: .3s;
@@ -134,7 +160,7 @@ a * {
   animation-fill-mode: both;
 }
 
-/* line 108, ../scss/style.scss */
+/* line 110, ../scss/style.scss */
 .animated_bg {
   -webkit-animation-duration: 1.2s;
   -moz-animation-duration: 1.2s;
@@ -186,7 +212,7 @@ a * {
     opacity: 1;
   }
 }
-/* line 171, ../scss/style.scss */
+/* line 173, ../scss/style.scss */
 .zoomIn {
   -webkit-animation-name: zoomIn;
   -moz-animation-name: zoomIn;
@@ -195,80 +221,309 @@ a * {
 }
 
 /* Content */
-/* line 180, ../scss/style.scss */
+/* Header */
+/* line 184, ../scss/style.scss */
 .header {
   display: block;
   height: 1136px;
+  width: 100%;
   background: #F6F6F6;
-  padding-top: 150px;
-  font: 15px/1.2 Arial, Helvetica, sans-serif;
+  font: 15px/1.2 "Museo Sans Cyrl 500", sans-serif;
+  padding: 0 5%;
 }
 
-/* line 188, ../scss/style.scss */
+/* line 193, ../scss/style.scss */
 .img_header {
   display: block;
   width: 45%;
   float: left;
+  padding-top: 200px;
 }
-/* line 192, ../scss/style.scss */
+/* line 198, ../scss/style.scss */
 .img_header img {
   text-align: center;
+  margin: 0 auto;
 }
 
-/* line 197, ../scss/style.scss */
+/* line 204, ../scss/style.scss */
 .block_text_header {
   display: block;
   width: 55%;
   float: left;
+  padding-top: 150px;
+  color: #333333;
 }
 
-/* line 203, ../scss/style.scss */
+/* line 212, ../scss/style.scss */
 .company {
-  font: 45px/1.2 Arial, Helvetica, sans-serif;
   margin-bottom: 160px;
   padding-left: 76px;
+  color: #000000;
 }
 
-/* line 208, ../scss/style.scss */
+/* line 218, ../scss/style.scss */
 #qa {
-  font: 22px/1.2 Arial, Helvetica, sans-serif;
-  padding-left: 70px;
+  font: 14px "Museo Sans Cyrl Light", sans-serif;
+  padding-left: 45px;
+  padding-bottom: 16px;
 }
 
-/* line 213, ../scss/style.scss */
+/* line 224, ../scss/style.scss */
+#annaK {
+  font: 45px/1.2 "Code Pro Light", sans-serif;
+}
+
+/* line 229, ../scss/style.scss */
+.item1 {
+  font: 15px "Museo Sans Cyrl light", sans-serif;
+}
+
+/* line 233, ../scss/style.scss */
 .item2 {
   padding-top: 80px;
+  font: 15px "Museo Sans Cyrl light", sans-serif;
 }
 
-/* line 217, ../scss/style.scss */
-.text_strong {
+/* line 238, ../scss/style.scss */
+.strong_item {
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-/* line 223, ../scss/style.scss */
+/* Wrapper */
+/* line 245, ../scss/style.scss */
 .wrapper {
-  margin-right: auto;
-  margin-left: auto;
+  padding: 0 5%;
   height: 100%;
   z-index: 10001;
 }
 
-/* line 231, ../scss/style.scss */
+/* Selection1 */
+/* line 253, ../scss/style.scss */
+.section1 {
+  display: block;
+  width: 100%;
+  height: 952px;
+}
+
+/* line 260, ../scss/style.scss */
 .img_section1 {
   display: block;
-  width: 40%;
+  width: 35%;
   float: left;
+  margin-top: 80px;
 }
 
-/* line 237, ../scss/style.scss */
+/* line 267, ../scss/style.scss */
 .block_text_section1 {
   display: block;
-  width: 60%;
+  width: 65%;
+  float: left;
+  height: 752px;
+}
+
+/* line 275, ../scss/style.scss */
+.img_for_div img {
+  display: block;
+  float: left;
+  width: 30%;
+  margin-top: 128px;
+}
+
+/* line 284, ../scss/style.scss */
+.item1_section1, .item2_section1 {
+  display: block;
+  float: left;
+  width: 70%;
+}
+
+/* line 290, ../scss/style.scss */
+.item1_section1 {
+  margin-top: 152px;
+}
+
+/* line 294, ../scss/style.scss */
+.margin_top {
+  margin-top: 40px;
+}
+
+/* line 298, ../scss/style.scss */
+.item2_section1 {
+  padding-top: 120px;
+  padding-right: 40px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+/* line 305, ../scss/style.scss */
+.block_text_down_section1 {
+  display: block;
+  float: left;
+  width: 80%;
+  margin-top: 68px;
+  line-height: 1.8;
+}
+
+/* Selection2 */
+/* line 315, ../scss/style.scss */
+.section2 {
+  display: block;
+  width: 100%;
+  height: 952px;
+}
+
+/* line 321, ../scss/style.scss */
+.img_section2 {
+  display: block;
+  width: 45%;
   float: left;
 }
 
-/* line 250, ../scss/style.scss */
+/* line 327, ../scss/style.scss */
+.block_text_section2 {
+  display: block;
+  width: 55%;
+  float: left;
+  height: 800px;
+}
+
+/* line 335, ../scss/style.scss */
+.block_text_section2 .item1 {
+  margin-top: 192px;
+}
+
+/* line 341, ../scss/style.scss */
+.social {
+  margin-top: 68px;
+}
+
+/* line 345, ../scss/style.scss */
+#navlist {
+  position: relative;
+}
+
+/* line 349, ../scss/style.scss */
+#navlist li, #navlist a {
+  display: block;
+  height: 13px;
+}
+
+/* line 354, ../scss/style.scss */
+#navlist li {
+  position: absolute;
+}
+
+/* line 358, ../scss/style.scss */
+#FB {
+  left: 0px;
+  width: 9px;
+  background: url("../img/share_sprite.png") 0 0;
+}
+
+/* line 364, ../scss/style.scss */
+#VK {
+  left: 20px;
+  width: 20px;
+  background: url("../img/share_sprite.png") -10px 0;
+}
+
+/* line 370, ../scss/style.scss */
+#GP {
+  left: 50px;
+  width: 20px;
+  background: url("../img/share_sprite.png") -30px 0;
+}
+
+/* Selection3 */
+/* line 377, ../scss/style.scss */
+.name_collect {
+  font: 32px/1.2 'Playfair Display', sans-serif;
+  margin-bottom: 20px;
+}
+
+/* Selection3 - carousel */
+/* line 383, ../scss/style.scss */
+.carousel {
+  display: block;
+  width: 100%;
+  height: 540px;
+  outline: 1px red solid;
+  float: left;
+}
+
+/* line 391, ../scss/style.scss */
+hr {
+  border: 1px solid #F3F3F3;
+}
+
+/* Footer */
+/* line 397, ../scss/style.scss */
+footer {
+  text-align: center;
+}
+
+/* line 401, ../scss/style.scss */
+.footer-top {
+  outline: 1px red solid;
+}
+
+/* line 405, ../scss/style.scss */
+.footer-top > div {
+  display: table-cell;
+  vertical-align: middle;
+  height: 400px;
+  padding: 0 60px;
+}
+
+/* line 412, ../scss/style.scss */
+.foot_item1 {
+  border-right: 1px solid #F3F3F3;
+  color: #333333;
+  font: 12px "Museo Sans Cyrl Bold", sans-serif;
+  line-height: 1.4;
+}
+
+/* line 419, ../scss/style.scss */
+.upper_text {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-weight: 900;
+}
+
+/* line 425, ../scss/style.scss */
+.foot_item_p {
+  color: #333333;
+  font: 12px "Museo Sans Cyrl Light", sans-serif;
+  line-height: 1.4;
+}
+
+/* line 431, ../scss/style.scss */
+.foot_item2_gucci {
+  font: italic 32px "Museo Sans Cyrl Bold", sans-serif;
+}
+
+/* line 436, ../scss/style.scss */
+.foot_item4 {
+  border-left: 1px solid #F3F3F3;
+}
+
+/* line 445, ../scss/style.scss */
+.copyright {
+  display: block;
+  float: left;
+}
+
+/* line 450, ../scss/style.scss */
+.footer_nav {
+  display: block;
+  float: right;
+}
+/* line 454, ../scss/style.scss */
+.footer_nav ul li {
+  display: inline-block;
+}
+
+/* line 463, ../scss/style.scss */
 .btn {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0;
@@ -294,29 +549,13 @@ a * {
   box-shadow: inset 0 0 0 1px #7ecc7e;
 }
 
-/* line 277, ../scss/style.scss */
-.copyright {
-  display: block;
-  float: left;
-}
-
-/* line 282, ../scss/style.scss */
-.footer_nav {
-  display: block;
-  float: right;
-}
-/* line 286, ../scss/style.scss */
-.footer_nav ul li {
-  display: inline-block;
-}
-
 /* Responsive Stuff */
 @media screen and (min-width: 0) and (max-width: 720px) {
-  /* line 295, ../scss/style.scss */
+  /* line 493, ../scss/style.scss */
   .img_header {
     width: 100%;
   }
-  /* line 297, ../scss/style.scss */
+  /* line 495, ../scss/style.scss */
   .img_header img {
     width: auto;
     height: auto;
