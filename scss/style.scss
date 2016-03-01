@@ -107,21 +107,6 @@ a *{
 	        animation-fill-mode:both;
 }
 
-.animated_bg {
-	-webkit-animation-duration:1.2s;
-	   -moz-animation-duration:1.2s;
-	     -o-animation-duration:1.2s;
-	        animation-duration:1.2s;
-
-	-webkit-animation-fill-mode:both;
-
-	   -moz-animation-fill-mode:both;
-
-	     -o-animation-fill-mode:both;
-
-	        animation-fill-mode:both;
-}
-
 @-webkit-keyframes zoomIn {
 	0% {
 		-webkit-transform:scale3d(.3, .3, .3);
@@ -375,6 +360,8 @@ a *{
 
 /* Selection3 */
 .name_collect {
+    display: block;
+    float: left;
     font:32px/1.2 'Playfair Display', sans-serif;
     margin-bottom: 20px;
 }
@@ -383,30 +370,40 @@ a *{
 .carousel {
     display: block;
     width: 100%;
-    height: 540px;
+    height: 500px;
     outline: 1px red solid;
-    float: left
+    float: left;
+    margin-bottom: 40px;
 }
+
+
+
 
 hr {
     border: 1px solid #F3F3F3;
 }
 
+.clearfix {
+     clear: both;
+}
 
 /* Footer */
 footer {
     text-align: center;
+    padding:0 5%;
 }
 
 .footer-top {
-    outline: 1px red solid;
+    display: block;
+    width: 100%;
+    //outline: 1px red solid;
 }
 
 .footer-top > div {
     display: table-cell;
     vertical-align: middle;
-    height: 400px;
-    padding: 0 60px;
+    width: 25%;
+    padding: 0 3%;
 }
 
 .foot_item1 {
@@ -437,14 +434,56 @@ footer {
     border-left: 1px solid #F3F3F3;
 }
 
+.foot_item4 {
+    .subscribe {
+        margin-top: 60px;
+    }
+    
+    input[type="text"] {
+        width: 200px;
+        height: 50px;
+        padding-right: 80px;
+        border: 1px solid #EAEAEA;
+        text-align: center;
+        font:12px "Museo Sans Cyrl Light", sans-serif;
+    }
+    
+    input[type="text"]:focus {
+        color: #666666;
+	    background:#FFFFFF;
+        text-align: center;
+        outline: none;
+    }
+    
+    input[type="submit"] {
+        margin-left: -80px;
+        height: 50px;
+        width: 80px;
+        color: 333333;
+        background: #E8DADC;
+        border: 1px solid #E8DADC;
+        outline: none;
+        text-align: center;
+        text-transform: uppercase;
+        font:12px "Museo Sans Cyrl Light", sans-serif;
+        font-weight: 700;
+    }
+    
+}
 
 .footer-floor {
-        
+    display: block;
+    width: 100%;
+    margin-top: 80px;
+    height: 40px;
 }
 
 .copyright {
     display: block;
     float: left;
+    color: #666666;
+    font:13px "Museo Sans Cyrl Light", sans-serif;
+    font-weight: 100;
 }
 
 .footer_nav {
@@ -452,40 +491,18 @@ footer {
     float: right;
     ul {
         li {
-            display: inline-block;      
+            display: inline-block; 
+            font:14px "Museo Sans Cyrl Light", sans-serif;
+            font-weight: 100;
+            margin-left: 56px;
+            
+            a {
+                text-decoration: none;
+                color: #666666;
+            }
         }   
     } 
 }
-
-
-
-
-.btn{
-	font-family:Arial, Helvetica, sans-serif; 
-	font-size:0;
-	line-height:20px;
-	display:inline-block;
-	min-width:50px;
-	padding:0;
-	cursor:pointer;
-	vertical-align:top;
-	color:#fff;
-	border:1px solid #61c161;
-	outline:none;
-	background: rgb(87,202,58);
-	background: -moz-linear-gradient(top,  rgba(87,202,58,1) 0%, rgba(47,159,58,1) 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(87,202,58,1)), color-stop(100%,rgba(47,159,58,1)));
-	background: -webkit-linear-gradient(top,  rgba(87,202,58,1) 0%,rgba(47,159,58,1) 100%);
-	background: -o-linear-gradient(top,  rgba(87,202,58,1) 0%,rgba(47,159,58,1) 100%);
-	background: -ms-linear-gradient(top,  rgba(87,202,58,1) 0%,rgba(47,159,58,1) 100%);
-	background: linear-gradient(to bottom,  rgba(87,202,58,1) 0%,rgba(47,159,58,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#57ca3a', endColorstr='#2f9f3a',GradientType=0 );
-	-webkit-box-shadow:inset 0 0 0 1px #7ecc7e;
-	   -moz-box-shadow:inset 0 0 0 1px #7ecc7e;
-	        box-shadow:inset 0 0 0 1px #7ecc7e;
-
-}
-
 
 
 /* Responsive Stuff */
@@ -498,5 +515,26 @@ footer {
             text-align: center;
         }
 	}
+        
+    .header > div {
+        display: block;
+        float: left;
+        width: 100%;
+        padding: 0 3%;
+    }  
+    
+    .wrapper > div {
+        display: block;
+        float: left;
+        width: 100%;
+        padding: 0 3%;
+    }  
+    
+    .footer-top  > div {
+        display: block;
+        float: left;
+        width: 100%;
+        padding: 0 3%;
+    }   
 }
 

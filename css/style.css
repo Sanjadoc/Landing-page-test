@@ -160,18 +160,6 @@ a * {
   animation-fill-mode: both;
 }
 
-/* line 110, ../scss/style.scss */
-.animated_bg {
-  -webkit-animation-duration: 1.2s;
-  -moz-animation-duration: 1.2s;
-  -o-animation-duration: 1.2s;
-  animation-duration: 1.2s;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
 @-webkit-keyframes zoomIn {
   0% {
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
@@ -212,7 +200,7 @@ a * {
     opacity: 1;
   }
 }
-/* line 173, ../scss/style.scss */
+/* line 158, ../scss/style.scss */
 .zoomIn {
   -webkit-animation-name: zoomIn;
   -moz-animation-name: zoomIn;
@@ -222,7 +210,7 @@ a * {
 
 /* Content */
 /* Header */
-/* line 184, ../scss/style.scss */
+/* line 169, ../scss/style.scss */
 .header {
   display: block;
   height: 1136px;
@@ -232,20 +220,20 @@ a * {
   padding: 0 5%;
 }
 
-/* line 193, ../scss/style.scss */
+/* line 178, ../scss/style.scss */
 .img_header {
   display: block;
   width: 45%;
   float: left;
   padding-top: 200px;
 }
-/* line 198, ../scss/style.scss */
+/* line 183, ../scss/style.scss */
 .img_header img {
   text-align: center;
   margin: 0 auto;
 }
 
-/* line 204, ../scss/style.scss */
+/* line 189, ../scss/style.scss */
 .block_text_header {
   display: block;
   width: 55%;
@@ -254,44 +242,44 @@ a * {
   color: #333333;
 }
 
-/* line 212, ../scss/style.scss */
+/* line 197, ../scss/style.scss */
 .company {
   margin-bottom: 160px;
   padding-left: 76px;
   color: #000000;
 }
 
-/* line 218, ../scss/style.scss */
+/* line 203, ../scss/style.scss */
 #qa {
   font: 14px "Museo Sans Cyrl Light", sans-serif;
   padding-left: 45px;
   padding-bottom: 16px;
 }
 
-/* line 224, ../scss/style.scss */
+/* line 209, ../scss/style.scss */
 #annaK {
   font: 45px/1.2 "Code Pro Light", sans-serif;
 }
 
-/* line 229, ../scss/style.scss */
+/* line 214, ../scss/style.scss */
 .item1 {
   font: 15px "Museo Sans Cyrl light", sans-serif;
 }
 
-/* line 233, ../scss/style.scss */
+/* line 218, ../scss/style.scss */
 .item2 {
   padding-top: 80px;
   font: 15px "Museo Sans Cyrl light", sans-serif;
 }
 
-/* line 238, ../scss/style.scss */
+/* line 223, ../scss/style.scss */
 .strong_item {
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 /* Wrapper */
-/* line 245, ../scss/style.scss */
+/* line 230, ../scss/style.scss */
 .wrapper {
   padding: 0 5%;
   height: 100%;
@@ -299,14 +287,14 @@ a * {
 }
 
 /* Selection1 */
-/* line 253, ../scss/style.scss */
+/* line 238, ../scss/style.scss */
 .section1 {
   display: block;
   width: 100%;
   height: 952px;
 }
 
-/* line 260, ../scss/style.scss */
+/* line 245, ../scss/style.scss */
 .img_section1 {
   display: block;
   width: 35%;
@@ -314,7 +302,7 @@ a * {
   margin-top: 80px;
 }
 
-/* line 267, ../scss/style.scss */
+/* line 252, ../scss/style.scss */
 .block_text_section1 {
   display: block;
   width: 65%;
@@ -322,7 +310,7 @@ a * {
   height: 752px;
 }
 
-/* line 275, ../scss/style.scss */
+/* line 260, ../scss/style.scss */
 .img_for_div img {
   display: block;
   float: left;
@@ -330,24 +318,24 @@ a * {
   margin-top: 128px;
 }
 
-/* line 284, ../scss/style.scss */
+/* line 269, ../scss/style.scss */
 .item1_section1, .item2_section1 {
   display: block;
   float: left;
   width: 70%;
 }
 
-/* line 290, ../scss/style.scss */
+/* line 275, ../scss/style.scss */
 .item1_section1 {
   margin-top: 152px;
 }
 
-/* line 294, ../scss/style.scss */
+/* line 279, ../scss/style.scss */
 .margin_top {
   margin-top: 40px;
 }
 
-/* line 298, ../scss/style.scss */
+/* line 283, ../scss/style.scss */
 .item2_section1 {
   padding-top: 120px;
   padding-right: 40px;
@@ -355,7 +343,7 @@ a * {
   line-height: 1.8;
 }
 
-/* line 305, ../scss/style.scss */
+/* line 290, ../scss/style.scss */
 .block_text_down_section1 {
   display: block;
   float: left;
@@ -365,21 +353,21 @@ a * {
 }
 
 /* Selection2 */
-/* line 315, ../scss/style.scss */
+/* line 300, ../scss/style.scss */
 .section2 {
   display: block;
   width: 100%;
   height: 952px;
 }
 
-/* line 321, ../scss/style.scss */
+/* line 306, ../scss/style.scss */
 .img_section2 {
   display: block;
   width: 45%;
   float: left;
 }
 
-/* line 327, ../scss/style.scss */
+/* line 312, ../scss/style.scss */
 .block_text_section2 {
   display: block;
   width: 55%;
@@ -387,47 +375,47 @@ a * {
   height: 800px;
 }
 
-/* line 335, ../scss/style.scss */
+/* line 320, ../scss/style.scss */
 .block_text_section2 .item1 {
   margin-top: 192px;
 }
 
-/* line 341, ../scss/style.scss */
+/* line 326, ../scss/style.scss */
 .social {
   margin-top: 68px;
 }
 
-/* line 345, ../scss/style.scss */
+/* line 330, ../scss/style.scss */
 #navlist {
   position: relative;
 }
 
-/* line 349, ../scss/style.scss */
+/* line 334, ../scss/style.scss */
 #navlist li, #navlist a {
   display: block;
   height: 13px;
 }
 
-/* line 354, ../scss/style.scss */
+/* line 339, ../scss/style.scss */
 #navlist li {
   position: absolute;
 }
 
-/* line 358, ../scss/style.scss */
+/* line 343, ../scss/style.scss */
 #FB {
   left: 0px;
   width: 9px;
   background: url("../img/share_sprite.png") 0 0;
 }
 
-/* line 364, ../scss/style.scss */
+/* line 349, ../scss/style.scss */
 #VK {
   left: 20px;
   width: 20px;
   background: url("../img/share_sprite.png") -10px 0;
 }
 
-/* line 370, ../scss/style.scss */
+/* line 355, ../scss/style.scss */
 #GP {
   left: 50px;
   width: 20px;
@@ -435,47 +423,57 @@ a * {
 }
 
 /* Selection3 */
-/* line 377, ../scss/style.scss */
+/* line 362, ../scss/style.scss */
 .name_collect {
+  display: block;
+  float: left;
   font: 32px/1.2 'Playfair Display', sans-serif;
   margin-bottom: 20px;
 }
 
 /* Selection3 - carousel */
-/* line 383, ../scss/style.scss */
+/* line 370, ../scss/style.scss */
 .carousel {
   display: block;
   width: 100%;
-  height: 540px;
+  height: 500px;
   outline: 1px red solid;
   float: left;
+  margin-bottom: 40px;
 }
 
-/* line 391, ../scss/style.scss */
+/* line 382, ../scss/style.scss */
 hr {
   border: 1px solid #F3F3F3;
 }
 
+/* line 386, ../scss/style.scss */
+.clearfix {
+  clear: both;
+}
+
 /* Footer */
-/* line 397, ../scss/style.scss */
+/* line 391, ../scss/style.scss */
 footer {
   text-align: center;
+  padding: 0 5%;
 }
 
-/* line 401, ../scss/style.scss */
+/* line 396, ../scss/style.scss */
 .footer-top {
-  outline: 1px red solid;
+  display: block;
+  width: 100%;
 }
 
-/* line 405, ../scss/style.scss */
+/* line 402, ../scss/style.scss */
 .footer-top > div {
   display: table-cell;
   vertical-align: middle;
-  height: 400px;
-  padding: 0 60px;
+  width: 25%;
+  padding: 0 3%;
 }
 
-/* line 412, ../scss/style.scss */
+/* line 409, ../scss/style.scss */
 .foot_item1 {
   border-right: 1px solid #F3F3F3;
   color: #333333;
@@ -483,82 +481,134 @@ footer {
   line-height: 1.4;
 }
 
-/* line 419, ../scss/style.scss */
+/* line 416, ../scss/style.scss */
 .upper_text {
   text-transform: uppercase;
   margin-bottom: 15px;
   font-weight: 900;
 }
 
-/* line 425, ../scss/style.scss */
+/* line 422, ../scss/style.scss */
 .foot_item_p {
   color: #333333;
   font: 12px "Museo Sans Cyrl Light", sans-serif;
   line-height: 1.4;
 }
 
-/* line 431, ../scss/style.scss */
+/* line 428, ../scss/style.scss */
 .foot_item2_gucci {
   font: italic 32px "Museo Sans Cyrl Bold", sans-serif;
 }
 
-/* line 436, ../scss/style.scss */
+/* line 433, ../scss/style.scss */
 .foot_item4 {
   border-left: 1px solid #F3F3F3;
 }
 
-/* line 445, ../scss/style.scss */
+/* line 438, ../scss/style.scss */
+.foot_item4 .subscribe {
+  margin-top: 60px;
+}
+/* line 442, ../scss/style.scss */
+.foot_item4 input[type="text"] {
+  width: 200px;
+  height: 50px;
+  padding-right: 80px;
+  border: 1px solid #EAEAEA;
+  text-align: center;
+  font: 12px "Museo Sans Cyrl Light", sans-serif;
+}
+/* line 451, ../scss/style.scss */
+.foot_item4 input[type="text"]:focus {
+  color: #666666;
+  background: #FFFFFF;
+  text-align: center;
+  outline: none;
+}
+/* line 458, ../scss/style.scss */
+.foot_item4 input[type="submit"] {
+  margin-left: -80px;
+  height: 50px;
+  width: 80px;
+  color: 333333;
+  background: #E8DADC;
+  border: 1px solid #E8DADC;
+  outline: none;
+  text-align: center;
+  text-transform: uppercase;
+  font: 12px "Museo Sans Cyrl Light", sans-serif;
+  font-weight: 700;
+}
+
+/* line 474, ../scss/style.scss */
+.footer-floor {
+  display: block;
+  width: 100%;
+  margin-top: 80px;
+  height: 40px;
+}
+
+/* line 481, ../scss/style.scss */
 .copyright {
   display: block;
   float: left;
+  color: #666666;
+  font: 13px "Museo Sans Cyrl Light", sans-serif;
+  font-weight: 100;
 }
 
-/* line 450, ../scss/style.scss */
+/* line 489, ../scss/style.scss */
 .footer_nav {
   display: block;
   float: right;
 }
-/* line 454, ../scss/style.scss */
+/* line 493, ../scss/style.scss */
 .footer_nav ul li {
   display: inline-block;
+  font: 14px "Museo Sans Cyrl Light", sans-serif;
+  font-weight: 100;
+  margin-left: 56px;
 }
-
-/* line 463, ../scss/style.scss */
-.btn {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0;
-  line-height: 20px;
-  display: inline-block;
-  min-width: 50px;
-  padding: 0;
-  cursor: pointer;
-  vertical-align: top;
-  color: #fff;
-  border: 1px solid #61c161;
-  outline: none;
-  background: #57ca3a;
-  background: -moz-linear-gradient(top, #57ca3a 0%, #2f9f3a 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #57ca3a), color-stop(100%, #2f9f3a));
-  background: -webkit-linear-gradient(top, #57ca3a 0%, #2f9f3a 100%);
-  background: -o-linear-gradient(top, #57ca3a 0%, #2f9f3a 100%);
-  background: -ms-linear-gradient(top, #57ca3a 0%, #2f9f3a 100%);
-  background: linear-gradient(to bottom, #57ca3a 0%, #2f9f3a 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#57ca3a', endColorstr='#2f9f3a',GradientType=0 );
-  -webkit-box-shadow: inset 0 0 0 1px #7ecc7e;
-  -moz-box-shadow: inset 0 0 0 1px #7ecc7e;
-  box-shadow: inset 0 0 0 1px #7ecc7e;
+/* line 499, ../scss/style.scss */
+.footer_nav ul li a {
+  text-decoration: none;
+  color: #666666;
 }
 
 /* Responsive Stuff */
 @media screen and (min-width: 0) and (max-width: 720px) {
-  /* line 493, ../scss/style.scss */
+  /* line 510, ../scss/style.scss */
   .img_header {
     width: 100%;
   }
-  /* line 495, ../scss/style.scss */
+  /* line 512, ../scss/style.scss */
   .img_header img {
     width: auto;
     height: auto;
     text-align: center;
+  }
+
+  /* line 519, ../scss/style.scss */
+  .header > div {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 3%;
+  }
+
+  /* line 526, ../scss/style.scss */
+  .wrapper > div {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 3%;
+  }
+
+  /* line 533, ../scss/style.scss */
+  .footer-top > div {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 3%;
   }
 }
