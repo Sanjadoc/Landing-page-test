@@ -202,8 +202,7 @@ a * {
 /* Selection1 */
 .section1 {
   padding: 10% 0;
-  background: #F6F6F6;
-  border: 1px solid red; }
+  background: #F6F6F6; }
 
 .margin_top {
   margin-top: 40px; }
@@ -212,8 +211,7 @@ a * {
 .section2 {
   text-align: left;
   padding: 10% 0;
-  background: #F6F6F6;
-  border: 1px solid black; }
+  background: #F6F6F6; }
 
 .item_section2 {
   margin-top: 5%;
